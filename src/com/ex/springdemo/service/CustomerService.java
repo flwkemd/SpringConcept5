@@ -1,0 +1,11 @@
+package com.ex.springdemo.service;
+
+import java.util.List;
+
+import com.ex.springdemo.entity.Customer;
+
+public interface CustomerService {
+
+	public List<Customer> getCustomers();
+	
+}
