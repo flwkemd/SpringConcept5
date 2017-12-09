@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import com.ex.springdemo.dao.CustomerDAO;
 import com.ex.springdemo.entity.Customer;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -19,7 +20,8 @@ public class CustomerController {
 	@Autowired
 	private CustomerDAO customerDAO;
 	
-	@RequestMapping("/list")
+	//@RequestMapping("/list")
+	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
  		
 		// get customers from the dao
